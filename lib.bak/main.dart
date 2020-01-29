@@ -89,8 +89,10 @@ class _HomepageState extends State<Homepage>
   // Vars for 1st page appearance
   var avatarLocation = 'assets/images/avatar.jpg';
   var userName = 'Amoong Banjo';
+  
 
   // Vars for notes data
+  
 
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -494,9 +496,7 @@ class _HomepageState extends State<Homepage>
                       child: Column(
                         children: <Widget>[
                           MyTabBar(_tabController),
-                          Container(
-                              height: globals.blockSizeVertical * 50,
-                              child: MyTabBarView(_tabController)),
+                          Expanded(child: MyTabBarView(_tabController)),
                         ],
                       ))),
             ],

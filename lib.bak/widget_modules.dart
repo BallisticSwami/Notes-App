@@ -100,13 +100,10 @@ class _MyTabBarViewState extends State<MyTabBarView> {
   @override
   Widget build(BuildContext context) {
     return TabBarView(
-      physics: AlwaysScrollableScrollPhysics(),
+      physics: NeverScrollableScrollPhysics(),
       controller: widget.controller,
       children: <Widget>[
-        ListView(
-          physics: BouncingScrollPhysics(),
-          children: <Widget>[CardHome(), CardHome(), CardHome()],
-        ), // Icon(Icons.note),
+        CardHome(), // Icon(Icons.note),
         Icon(Icons.notification_important),
         Icon(Icons.done_all),
         Icon(Icons.archive)
@@ -121,7 +118,8 @@ class CardHome extends StatefulWidget {
   String cardTime;
   String cardDate;
 
-  CardHome({this.cardHead, this.cardDesc, this.cardTime, this.cardDate});
+  CardHome(
+      {this.cardHead, this.cardDesc, this.cardTime, this.cardDate});
 
   @override
   _CardHomeState createState() => _CardHomeState();
@@ -132,7 +130,7 @@ class _CardHomeState extends State<CardHome> {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.fromLTRB(globals.blockSizeHorizontal * 6,
-          globals.blockSizeVertical * 2, globals.blockSizeHorizontal * 6, 0),
+          globals.blockSizeVertical * 3, globals.blockSizeHorizontal * 6, 0),
       width: globals.blockSizeHorizontal * 87,
       child: Card(
         shape: RoundedRectangleBorder(
@@ -183,7 +181,7 @@ class _CardHomeState extends State<CardHome> {
               Container(
                 width: globals.blockSizeHorizontal * 70,
                 child: Text(
-                  'Buy Tickets for departure on 14th May at 2:15pm',
+                  'Buy Tickets hdcuiadcniqawdn qwhduiqawdnqwidnqwudjqd qndquidqaa dnu',
                   overflow: TextOverflow.ellipsis,
                   maxLines: 3,
                   style: TextStyle(

@@ -62,12 +62,12 @@ flutter:
   fonts:
     - family: Arboria
       fonts:
- #       - asset: assets/fonts/Arboria-Bold.otf
- #         weight: 600
+        - asset: assets/fonts/Arboria-Bold.otf
+          weight: 700
         - asset: assets/fonts/Arboria-Medium.otf
-          weight: 400
+          weight: 600
         - asset: assets/fonts/Arboria-Book.otf
-          weight: 300
+          weight: 400
     - family: Gilroy
       fonts:
         - asset: assets/fonts/Gilroy-Regular.otf
@@ -75,7 +75,7 @@ flutter:
         - asset: assets/fonts/Gilroy-Medium.otf
           weight: 500
         - asset: assets/fonts/Gilroy-Thin.otf
-          weight: 300
+          weight: 100
 
   #   - family: Trajan Pro
   #     fonts:
